@@ -4,7 +4,7 @@
   "description": "learning from fullstackopen part 3",
   "main": "index.js",
   "scripts": {
-    "build:ui":"rm -rf dist && cd ../introdemo && npm run build && cp -r dist ../learningbackshots",
+    "build:ui": "rm -rf dist && cd ../introdemo && npm run build && cp -r dist ../learningbackshots",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
     "start": "node index.js",
     "dev": "node --watch index.js",
@@ -13,7 +13,6 @@
   "author": "Jai Akash S",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
     "express": "^5.1.0"
   }
 }
