@@ -6,10 +6,12 @@
   "scripts": {
     "build:ui": "rm -rf dist && cd ../introdemo && npm run build && cp -r dist ../learningbackshots",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push",
+    "forceDev":"npm run build:ui && npm run dev",
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development node --watch index.js",
     "test": "cross-env NODE_ENV=test node --test",
     "lint": "eslint ."
+
   },
   "author": "Jai Akash S",
   "license": "ISC",
