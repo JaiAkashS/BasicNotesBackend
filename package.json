@@ -10,8 +10,8 @@
     "start": "cross-env NODE_ENV=production node index.js",
     "dev": "cross-env NODE_ENV=development node --watch index.js",
     "test": "cross-env NODE_ENV=test node --test",
-    "lint": "eslint ."
-
+    "lint": "eslint .",
+    "push": "git add . && git commit -m updateBackend && git push && cd ../introdemo git add . && git commit -m uibuild && git push"
   },
   "author": "Jai Akash S",
   "license": "ISC",
